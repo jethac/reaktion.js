@@ -91,6 +91,9 @@
   width: 100%;
   padding-top: 50px;
 }
+.nav.mobile.mobile-only {
+  padding-top: 0;
+}
 .nav.mobile.mobile-only > ul {
   display: block;
 }
