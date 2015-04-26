@@ -54,8 +54,11 @@
             }
 
             if(this.options.arrows) {
-                nav.find('ul > li').not('ul > li > ul li').has('ul')
-                      .prepend('<span class="arrow">'+this.options.arrowIcon+'</span>');
+                nav
+                    .find('ul > li')
+                    //.not('ul > li > ul li')
+                    .has('ul')
+                    .prepend('<span class="arrow">'+this.options.arrowIcon+'</span>');
                 menu.on('click', 'span.arrow', function() {
                     reaktion._toggleSubNav($(this));
                 });
