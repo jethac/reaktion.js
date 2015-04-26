@@ -32,6 +32,8 @@
         this.options = $.extend({}, defaults, options);
         this._defaults = defaults;
 
+        this._depth = 0;
+
         this._init();
     }
 
@@ -43,6 +45,18 @@
             reaktion = this;
             menu = $(this.element).find('ul:first');
 
+            var tailselector = ' > li > ul';
+            var idx = 0;
+            var lists_selector = this.element.selector + ' > ul';
+            var lists = $(lists_selector);
+            while(lists.length > 0) {
+
+                lists.addClass('reaktion-ul-' + idx);
+                idx++;
+
+                lists_selector += tailselector;
+                lists = $(lists_selector);
+            }
 
             if (this.options.mobileOnly) {
                 nav.addClass('mobile').addClass('mobile-only');

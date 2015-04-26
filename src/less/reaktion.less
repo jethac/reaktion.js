@@ -2,35 +2,22 @@
 @navTextColor: #ffffff;
 @subNavWidth: 160px;
 
+// Generate 8 levels worth of shit.
+.generate-uls(8);
+.generate-uls(@n, @i: 0) when (@i =< @n) {
+	.reaktion-ul-@{i} {
+		.lightenedUL(@navBackgroundColor, @i);
+	}
+
+	.generate-uls(@n, (@i + 1));
+}
+
 .nav {
 	position:relative;
 	display:block;
 	font-family: "Helvetica", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 100;
-
-	> ul {
-		.lightenedUL(@navBackgroundColor, 0);
-	}
-	> ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 1);
-	}
-	> ul > li > ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 2);
-	}
-	> ul > li > ul > li > ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 3);
-	}
-	> ul > li > ul > li > ul > li > ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 4);
-	}
-	> ul > li > ul > li > ul > li > ul > li > ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 5);
-	}
-	> ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 6);
-	}
-
 
 	ul {
 		list-style: none;
@@ -150,6 +137,7 @@
 					}
 				}
 			}
+		}
 
 		.nav-bars {
 			display:block;
