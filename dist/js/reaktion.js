@@ -32,8 +32,6 @@
         this.options = $.extend({}, defaults, options);
         this._defaults = defaults;
 
-        this._depth = 0;
-
         this._init();
     }
 

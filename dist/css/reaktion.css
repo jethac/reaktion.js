@@ -61,35 +61,40 @@
 .reaktion-ul-8 > li > a:hover {
   background: #b9b9b9;
 }
+.reaktion-ul-9 > li > a {
+  background: #b9b9b9;
+  border-bottom: 1px solid #c6c6c6;
+}
+.reaktion-ul-9 > li > a:hover {
+  background: #c6c6c6;
+}
+.reaktion-ul-10 > li > a {
+  background: #c6c6c6;
+  border-bottom: 1px solid #d2d2d2;
+}
+.reaktion-ul-10 > li > a:hover {
+  background: #d2d2d2;
+}
+.reaktion-ul-11 > li > a {
+  background: #d2d2d2;
+  border-bottom: 1px solid #dfdfdf;
+}
+.reaktion-ul-11 > li > a:hover {
+  background: #dfdfdf;
+}
+.reaktion-ul-12 > li > a {
+  background: #dfdfdf;
+  border-bottom: 1px solid #ececec;
+}
+.reaktion-ul-12 > li > a:hover {
+  background: #ececec;
+}
 .nav {
   position: relative;
   display: block;
   font-family: "Helvetica", Arial, sans-serif;
   font-size: 14px;
   font-weight: 100;
-  /*
-	> ul {
-		.lightenedUL(@navBackgroundColor, 0);
-	}
-	> ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 1);
-	}
-	> ul > li > ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 2);
-	}
-	> ul > li > ul > li > ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 3);
-	}
-	> ul > li > ul > li > ul > li > ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 4);
-	}
-	> ul > li > ul > li > ul > li > ul > li > ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 5);
-	}
-	> ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul {
-		.lightenedUL(@navBackgroundColor, 6);
-	}
-*/
 }
 .nav ul {
   list-style: none;
